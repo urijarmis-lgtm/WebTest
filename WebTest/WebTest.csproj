@@ -191,7 +191,6 @@
         <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105.The missing file is {0}.</ErrorText>
       </PropertyGroup>
       <Error Condition="!Exists('..\packages\Selenium.WebDriver.4.43.0\build\Selenium.WebDriver.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Selenium.WebDriver.4.43.0\build\Selenium.WebDriver.props'))" />
-      <Error Condition="!Exists('..\packages\Selenium.WebDriver.ChromeDriver.148.0.7778.9700-beta\build\Selenium.WebDriver.ChromeDriver.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Selenium.WebDriver.ChromeDriver.148.0.7778.9700-beta\build\Selenium.WebDriver.ChromeDriver.targets'))" />
       <Error Condition="!Exists('..\packages\System.ValueTuple.4.6.2\build\net471\System.ValueTuple.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\System.ValueTuple.4.6.2\build\net471\System.ValueTuple.targets'))" />
       <Error Condition="!Exists('..\packages\NUnit.4.5.1\build\NUnit.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\NUnit.4.5.1\build\NUnit.props'))" />
       <Error Condition="!Exists('..\packages\Microsoft.Testing.Platform.2.1.0\build\netstandard2.0\Microsoft.Testing.Platform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Testing.Platform.2.1.0\build\netstandard2.0\Microsoft.Testing.Platform.props'))" />
@@ -205,14 +204,15 @@
       <Error Condition="!Exists('..\packages\Microsoft.CodeCoverage.18.5.1\build\netstandard2.0\Microsoft.CodeCoverage.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeCoverage.18.5.1\build\netstandard2.0\Microsoft.CodeCoverage.targets'))" />
       <Error Condition="!Exists('..\packages\Microsoft.NET.Test.Sdk.18.5.1\build\net462\Microsoft.NET.Test.Sdk.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.NET.Test.Sdk.18.5.1\build\net462\Microsoft.NET.Test.Sdk.props'))" />
       <Error Condition="!Exists('..\packages\Microsoft.NET.Test.Sdk.18.5.1\build\net462\Microsoft.NET.Test.Sdk.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.NET.Test.Sdk.18.5.1\build\net462\Microsoft.NET.Test.Sdk.targets'))" />
+      <Error Condition="!Exists('..\packages\Selenium.WebDriver.ChromeDriver.147.0.7727.11700\build\Selenium.WebDriver.ChromeDriver.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Selenium.WebDriver.ChromeDriver.147.0.7727.11700\build\Selenium.WebDriver.ChromeDriver.targets'))" />
     </Target>
-    <Import Project="..\packages\Selenium.WebDriver.ChromeDriver.148.0.7778.9700-beta\build\Selenium.WebDriver.ChromeDriver.targets" Condition="Exists('..\packages\Selenium.WebDriver.ChromeDriver.148.0.7778.9700-beta\build\Selenium.WebDriver.ChromeDriver.targets')" />
     <Import Project="..\packages\System.ValueTuple.4.6.2\build\net471\System.ValueTuple.targets" Condition="Exists('..\packages\System.ValueTuple.4.6.2\build\net471\System.ValueTuple.targets')" />
     <Import Project="..\packages\Microsoft.Testing.Platform.2.1.0\build\netstandard2.0\Microsoft.Testing.Platform.targets" Condition="Exists('..\packages\Microsoft.Testing.Platform.2.1.0\build\netstandard2.0\Microsoft.Testing.Platform.targets')" />
     <Import Project="..\packages\Microsoft.Testing.Platform.MSBuild.2.1.0\build\Microsoft.Testing.Platform.MSBuild.targets" Condition="Exists('..\packages\Microsoft.Testing.Platform.MSBuild.2.1.0\build\Microsoft.Testing.Platform.MSBuild.targets')" />
     <Import Project="..\packages\NUnit3TestAdapter.6.2.0\build\net462\NUnit3TestAdapter.targets" Condition="Exists('..\packages\NUnit3TestAdapter.6.2.0\build\net462\NUnit3TestAdapter.targets')" />
     <Import Project="..\packages\Microsoft.CodeCoverage.18.5.1\build\netstandard2.0\Microsoft.CodeCoverage.targets" Condition="Exists('..\packages\Microsoft.CodeCoverage.18.5.1\build\netstandard2.0\Microsoft.CodeCoverage.targets')" />
     <Import Project="..\packages\Microsoft.NET.Test.Sdk.18.5.1\build\net462\Microsoft.NET.Test.Sdk.targets" Condition="Exists('..\packages\Microsoft.NET.Test.Sdk.18.5.1\build\net462\Microsoft.NET.Test.Sdk.targets')" />
+    <Import Project="..\packages\Selenium.WebDriver.ChromeDriver.147.0.7727.11700\build\Selenium.WebDriver.ChromeDriver.targets" Condition="Exists('..\packages\Selenium.WebDriver.ChromeDriver.147.0.7727.11700\build\Selenium.WebDriver.ChromeDriver.targets')" />
     <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
          Other similar extension points exist, see Microsoft.Common.targets.
     <Target Name="BeforeBuild">
